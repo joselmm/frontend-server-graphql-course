@@ -1,15 +1,16 @@
 //modules and dependencies
-import ApolloClient from "apollo-boost";
-import { ApolloProvider } from "react-apollo";
-import AddBookComponent from "./components/AddBookComponent";
+import React from 'react';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
+import AddBookComponent from './components/AddBookComponent';
 
 //React Components
-import BookListComponent from "./components/BookListComponent";
-import "./styles.css";
+import BookListComponent from './components/BookListComponent';
+import './styles.css';
 
 //Apollo client setup
 const client = new ApolloClient({
-  uri: "https://fyq4p3-65247.csb.app/graphql"
+  uri: 'https://fyq4p3-65247.csb.app/graphql',
 });
 
 export default function App() {
